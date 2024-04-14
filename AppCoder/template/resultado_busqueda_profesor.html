@@ -1,9 +1,10 @@
-#{% extends "padre.html" %}
+{% extends "padre.html" %}
+
 {% load static %}
 
 {% block contenido %}
-    
-   <h2>Profesores</h2>
+       <h2>Profesores</h2>
+       
     <ul>
         {% for profesor in profesores %}
         <li>Nombre: {{ profesor.nombre }}</li>
