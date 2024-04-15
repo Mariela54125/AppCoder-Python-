@@ -2,7 +2,7 @@ from django.shortcuts import render
 from AppCoder.models import Curso
 from django.http import HttpResponse
 from django.template import loader
-from AppCoder.forms import Curso_formulario
+from AppCoder.forms import Curso_formulario , UserEditForm
 from AppCoder.forms import Alumno_formulario
 from AppCoder.forms import Profesor_formulario
 from AppCoder.models import Alumno
@@ -305,3 +305,17 @@ def register(request):
     else:
         form = UserCreationForm()
     return render(request , "registro.html" , {"form":form})
+
+#clase 24 editar perfil#
+
+def editarPerfil(request):
+
+    usuario = request.user
+
+    if request.method == "POST":
+        pass
+
+    else:
+        miFormulario = UserEditForm(initial={"email":usuario.email})
+    
+    return render( request , "editar_perfil.html", {"miFormulario":miFormulario, "usuario":usuario})
