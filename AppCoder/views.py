@@ -13,9 +13,18 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 #CURSO#
+
 def inicio(request):
+    # Obtener el avatar con ID 3
+    avatar = Avatar.objects.filter(user=request.user.id, id=3).first()
+    url_avatar = None
+    if avatar:
+        url_avatar = avatar.imagen.url
+
+    return render(request, "padre.html", {"url": url_avatar})
+#def inicio(request):
     avatares = Avatar.objects.filter(user=request.user.id)
-    return render(request, "padre.html", {"url": avatares[0].imagen.url})
+    return render(request, "padre.html", {"url": avatares[0].imagen.url})#
 
 ##def inicio(request):
     return render(request, "padre.html")#
