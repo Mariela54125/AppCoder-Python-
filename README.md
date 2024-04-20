@@ -27,6 +27,9 @@ Ejecución
 python manage.py runserver
 2.	Abre tu navegador y escribe en la barra de direcciones:
 http://127.0.0.1:8000/AppCoder/
+Para loguearse:
+usuario: mariela
+clave: coder1234
 3.	Ya puedes utilizar tu aplicación Django en el navegador.
 
 
