@@ -5,9 +5,6 @@ Perfiles de los Usuario
 Este proyecto fue desarrollado por:
 •	Mariela Sanchez: Estudiante de CoderHouse y principiante en el desarrollo web. Este proyecto representa mi primera incursión en la creación de aplicaciones web utilizando Django. Aprendí mucho durante este proceso y estoy emocionado de compartir mi trabajo con la comunidad.
 
-* Demostracion del funcionamiento de la App:
-  https://drive.google.com/file/d/1-abR0CdVEX4si8XPK_Umz5SKEOTXHjsP/view?usp=drive_link
-
 Requisitos: 
 •	Tener instalado Python en tu sistema. Puedes descargar la última versión desde el sitio oficial: https://www.python.org/downloads/
 •	Tener instalado pip, que es el gestor de paquetes de Python. Si ya tienes Python instalado, deberías tenerlo disponible en tu terminal.
